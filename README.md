@@ -179,7 +179,7 @@ If you use this code, please cite:
 
   * Köppl, Vidotto, Wohlmuth (2020). *Int. J. Numer. Meth. Biomed. Eng.*, 36(10):e3386.
   * Fritz, *et al.* (2022). *IJNMBE*, 38(7):e3612. Source: [https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0](https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0)
-  * Dormanns, *et al.* (2015). *J. Theor. Biol.* 364:49–70. Repo: [https://github.com/brainstrust/envy-you](https://github.com/brainstrust/envy-you)
+  * Dormanns, *et al.* (2015). *J. Theor. Biol.* 364:49–70. Repo: [https://github.com/brainstrust/envy-you](https://github.com/brainstrust/envy-you) 
 
 ---
 
