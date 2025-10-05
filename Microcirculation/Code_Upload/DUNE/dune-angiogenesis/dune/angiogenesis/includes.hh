@@ -1,0 +1,72 @@
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <math.h>
+#include <time.h>
+
+#include <cmath>
+#include <ctime>
+#include <dune/common/exceptions.hh>
+#include <dune/common/float_cmp.hh>
+#include <dune/common/fvector.hh>
+#include <dune/common/indices.hh>
+#include <dune/common/parallel/mpihelper.hh>
+#include <dune/common/parametertreeparser.hh>
+#include <dune/common/shared_ptr.hh>
+#include <dune/common/timer.hh>
+#include <dune/foamgrid/foamgrid.hh>
+#include <dune/geometry/quadraturerules.hh>
+#include <dune/geometry/referenceelements.hh>
+#include <dune/geometry/type.hh>
+#include <dune/grid/common/datahandleif.hh>
+#include <dune/grid/common/gridfactory.hh>
+#include <dune/grid/common/mcmgmapper.hh>
+#include <dune/grid/io/file/gmshreader.hh>
+#include <dune/grid/io/file/vtk/subsamplingvtkwriter.hh>
+#include <dune/grid/io/file/vtk/vtkwriter.hh>
+#include <dune/grid/test/checkadaptation.hh>
+#include <dune/grid/test/checkindexset.hh>
+#include <dune/grid/test/gridcheck.hh>
+#include <dune/grid/utility/persistentcontainer.hh>
+#include <dune/grid/yaspgrid.hh>
+#include <dune/istl/bvector.hh>
+#include <dune/istl/io.hh>
+#include <dune/istl/bcrsmatrix.hh>
+#include <dune/istl/ilu.hh>
+#include <dune/istl/matrix.hh>
+#include <dune/istl/multitypeblockmatrix.hh>
+#include <dune/istl/multitypeblockvector.hh>
+#include <dune/istl/operators.hh>
+#include <dune/istl/paamg/amg.hh>
+#include <dune/istl/paamg/fastamg.hh>
+#include <dune/istl/paamg/pinfo.hh>
+#include <dune/istl/preconditioners.hh>
+#include <dune/istl/solvercategory.hh>
+#include <dune/istl/solvers.hh>
+#include <iomanip>
+#include <iostream>
+#include <map>
+#include <random>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <fstream>
+#include <unistd.h>
+#include <chrono>
+#include <thread>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unordered_map>
+#include <unordered_set>
+
+#include <dune/common/dynmatrix.hh>
+
+#include "source/BlockAMG.hh"
+#include "source/GenerateNetwork.hh"
+#include "source/Solver.hh"
+#include "source/Subdomain.hh"
+#include "source/SupportFunctions.hh"
+#include "source/boundingBox/boundingboxtree.hh"

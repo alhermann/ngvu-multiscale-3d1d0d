@@ -1,0 +1,27 @@
+diff --git a/dune/grid/test/checkintersectionit.cc b/dune/grid/test/checkintersectionit.cc
+index e03bde0..e99bea0 100644
+--- a/dune/grid/test/checkintersectionit.cc
++++ b/dune/grid/test/checkintersectionit.cc
+@@ -548,10 +548,11 @@ void checkIntersectionIterator ( const GridViewType &view,
+ 
+   // check whether integral over the outer normals is zero
+   // note: This is wrong on curved surfaces (take, e.g., the upper half sphere).
+-  //       Therefore we only enforce this check on affine elements.
++  //       Therefore we only enforce this check on affine elements. 
++  //       This is also wrong if dimworld != dimgrid (FoamGrid)
+   if( (sumNormal.two_norm() > 1e-8) && (eIt->partitionType() != Dune::GhostEntity) )
+   {
+-    if( eIt->geometry().affine() )
++    if( eIt->geometry().affine() && GridType::dimension==GridType::dimensionworld)
+       DUNE_THROW( Dune::GridError, "Integral over outer normals on affine entity is nonzero: " << sumNormal );
+     ++errorState.sumNormalsNonZero;
+   }
+@@ -581,7 +582,7 @@ void checkViewIntersectionIterator(const GridViewType& view) {
+     std :: cerr << "Warning: Integral over outer normals is not always zero."
+                 << std :: endl;
+     std :: cerr << "         This behaviour may be correct for entities with"
+-                << " nonzero curvature." << std :: endl;;
++                << " nonzero curvature or in grids with dimensions smaller than world dimension." << std :: endl;;
+   }
+ }
+ 

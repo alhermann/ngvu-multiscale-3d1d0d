@@ -1,0 +1,69 @@
+{
+    "vertices": [
+        {
+            "name": "cw_out_8",
+            "peripheral_compliance": 0.38695997335222926,
+            "peripheral_resistance": 1.7866666666666668
+        },
+        {
+            "name": "cw_out_10",
+            "peripheral_compliance": 0.014576289823268373,
+            "peripheral_resistance": 47.4310331439079
+        },
+        {
+            "name": "cw_out_13",
+            "peripheral_compliance": 0.0147215525219126,
+            "peripheral_resistance": 46.963014579716905
+        },
+        {
+            "name": "cw_out_15",
+            "peripheral_compliance": 0.025797331556815285,
+            "peripheral_resistance": 26.8
+        },
+        {
+            "name": "cw_out_16",
+            "peripheral_compliance": 0.025797331556815285,
+            "peripheral_resistance": 26.8
+        },
+        {
+            "name": "cw_out_23",
+            "peripheral_compliance": 0.009697935714018049,
+            "peripheral_resistance": 71.29027311691694
+        },
+        {
+            "name": "cw_out_24",
+            "peripheral_compliance": 0.00975230151306447,
+            "peripheral_resistance": 70.89285383521747
+        },
+        {
+            "name": "cw_out_29",
+            "peripheral_compliance": 0.006372384361678071,
+            "peripheral_resistance": 108.49447341569147
+        },
+        {
+            "name": "cw_out_30",
+            "peripheral_compliance": 0.006392901713685433,
+            "peripheral_resistance": 108.14627170673077
+        },
+        {
+            "name": "cw_out_32",
+            "peripheral_compliance": 0.004863024700782065,
+            "peripheral_resistance": 142.1684092230633
+        },
+        {
+            "name": "cw_out_33",
+            "peripheral_compliance": 0.0048649026383986325,
+            "peripheral_resistance": 142.113529727334
+        },
+        {
+            "name": "new_out_1",
+            "peripheral_compliance": 0.0030764776572229733,
+            "peripheral_resistance": 224.7272896975053
+        },
+        {
+            "name": "new_out_2",
+            "peripheral_compliance": 0.0030742240264151756,
+            "peripheral_resistance": 224.89203121896358
+        }
+    ]
+}

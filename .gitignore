@@ -1,0 +1,45 @@
+# Editors / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# MATLAB / Octave
+*.asv
+*.m~ 
+*.mat
+*.mex*
+*.slxc
+*.autosave
+*.mdl.r201*
+*.slx.r20*
+*.bak
+*.tmp
+# Sim outputs
+/NGVU/helpers/*.csv
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Build artifacts — Macrocirculation
+Macrocirculation/**/dist/
+Macrocirculation/**/.pytest_cache/
+Macrocirculation/**/_deps/
+
+# Build artifacts — DUNE / Microcirculation
+Microcirculation/Code_Upload/DUNE/**/CMakeFiles/
+Microcirculation/Code_Upload/DUNE/**/CMakeCache.txt
+Microcirculation/Code_Upload/DUNE/**/cmake/
+Microcirculation/Code_Upload/DUNE/**/Makefile
+
+# Logs & temporary
+*.log
+*.out
+*.err
+*.lock
+
+# Local scripts / notebooks (optional – keep if you want them versioned)
+*.ipynb_checkpoints
+

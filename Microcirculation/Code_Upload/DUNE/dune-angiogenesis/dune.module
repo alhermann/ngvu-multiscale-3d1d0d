@@ -1,0 +1,10 @@
+################################
+# Dune module information file #
+################################
+
+#Name of the module
+Module: dune-angiogenesis
+Version: 1.0
+Maintainer: ettore.vidotto@ma.tum.de
+#depending on
+Depends: dune-common dune-istl dune-geometry dune-grid dune-foamgrid dune-localfunctions dune-typetree dune-functions

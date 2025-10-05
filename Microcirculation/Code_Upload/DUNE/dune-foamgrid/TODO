@@ -1,0 +1,5 @@
+- Why are there specializations used in the implementation of FoamGridFactory?
+- Replace make2din3dgrid by a gmsh file
+- Does somebody really need the dgf code?
+- Use shared_ptr for levelIndexSets_
+- foamgridintersectioniterators: shortcut to getRealImplementation

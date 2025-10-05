@@ -1,0 +1,7 @@
+*.log
+*.trs
+
+foamgrid-test
+global-refine-test
+local-refine-test
+

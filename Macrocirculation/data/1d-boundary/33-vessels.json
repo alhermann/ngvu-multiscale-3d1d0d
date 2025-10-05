@@ -1,0 +1,59 @@
+{
+    "vertices": [
+        {
+            "name": "cw_out_8",
+            "peripheral_compliance": 0.3870393491737245,
+            "peripheral_resistance": 1.7866666666666668
+        },
+        {
+            "name": "cw_out_10",
+            "peripheral_compliance": 0.01574580565871583,
+            "peripheral_resistance": 43.91711156896442
+        },
+        {
+            "name": "cw_out_13",
+            "peripheral_compliance": 0.015899749792381686,
+            "peripheral_resistance": 43.491898481848395
+        },
+        {
+            "name": "cw_out_15",
+            "peripheral_compliance": 0.0258026232782483,
+            "peripheral_resistance": 26.8
+        },
+        {
+            "name": "cw_out_16",
+            "peripheral_compliance": 0.0258026232782483,
+            "peripheral_resistance": 26.8
+        },
+        {
+            "name": "cw_out_23",
+            "peripheral_compliance": 0.010521261772727714,
+            "peripheral_resistance": 65.72503553229008
+        },
+        {
+            "name": "cw_out_24",
+            "peripheral_compliance": 0.010578916678096748,
+            "peripheral_resistance": 65.36683527234888
+        },
+        {
+            "name": "cw_out_29",
+            "peripheral_compliance": 0.006913248178180678,
+            "peripheral_resistance": 100.02683051934574
+        },
+        {
+            "name": "cw_out_30",
+            "peripheral_compliance": 0.006935008842825568,
+            "peripheral_resistance": 99.71296641855594
+        },
+        {
+            "name": "cw_out_32",
+            "peripheral_compliance": 0.005405944053678224,
+            "peripheral_resistance": 127.91665932734693
+        },
+        {
+            "name": "cw_out_33",
+            "peripheral_compliance": 0.00540793485813843,
+            "peripheral_resistance": 127.86956980748332
+        }
+    ]
+}

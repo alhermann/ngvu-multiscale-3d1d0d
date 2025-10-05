@@ -1,0 +1,15 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+CXX=/usr/bin/c++ 
+CC=/usr/bin/cc
+DEPENDENCIES=
+
+Name: dune-angiogenesis
+Version: 1.0
+Description: dune-angiogenesis module
+URL: http://dune-project.org/
+Requires: dune-common dune-uggrid dune-istl dune-geometry dune-grid dune-foamgrid dune-localfunctions dune-typetree dune-functions dune-grid-glue dune-pdelab
+Libs: -L${libdir}
+Cflags: -I${includedir}
