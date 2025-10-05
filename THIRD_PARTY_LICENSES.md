@@ -37,9 +37,9 @@ This project vendors and/or links against several third-party packages. Below is
 ## Referenced/related upstream research code (not necessarily vendored here)
 
 * **envy-you (Dormanns et al., Neurovascular coupling)**
-  Repo: [https://github.com/brainstrust/envy-you](https://github.com/brainstrust/envy-you)
-  **License status:** The repository does not include a clear license file at the time of writing (notes like “see upstream LICENSE” are present, but no license file was found).
-  **Implication:** In the absence of an explicit license, treat the code as **all rights reserved** by the authors. You may *not* copy/redistribute their code unless permitted by law or written permission. We cite the work academically and implement our own code, but do **not** redistribute any of their source.
+  Repo: https://github.com/brainstrust/envy-you
+
+  **Status in this repository:** No source code from *envy-you* is included or redistributed here. Our implementation was developed independently and only draws conceptual inspiration from the published work (Dormanns et al., 2015). At the time of writing, the *envy-you* repository does not contain a clear license file. Because we do **not** ship their code, the licensing of *envy-you* does not impose terms on this repository. If you choose to use *envy-you* directly, consult the authors and/or the upstream repository for licensing details.
 
 * **Flows1D0D3D (Köppl, Vidotto, Wohlmuth; Fritz et al.)**
   Release referenced in the paper: [https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0](https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0)
