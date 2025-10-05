@@ -1,6 +1,6 @@
 # NGVU-Multiscale-3D1D0D
 
-> A reproducible research code for our preprint
+> Research code for our preprint
 > **A 3D-1D-0D Multiscale Model of the Neuro-Glial-Vascular Unit for Synaptic and Vascular Dynamics in the Dorsal Vagal Complex**
 > Hermann, Alexander, *et al.*, arXiv:2504.02540 (2025)
 
@@ -14,6 +14,7 @@ This repository couples (i) a 1D macrocirculation solver, (ii) a DUNE-based 3D/1
 * [Requirements](#requirements)
 * [Quick start](#quick-start)
 * [Build & run — details](#build--run--details)
+* [Data & inputs](#data--inputs)
 * [Data handoff](#data-handoff)
 * [Reproducing the paper](#reproducing-the-paper)
 * [Citations](#citations)
@@ -144,6 +145,20 @@ This program:
 
 ---
 
+## Data & inputs
+
+* **Macrocirculation → Microcirculation flow CSV**
+  `pica_flow_heart_period.csv` is produced by the macrocirculation post-process and copied by `master.m` to the micro build tree.
+
+* **Reference microvascular network (brain99)**
+  The microcirculation module can be configured to use the **brain 1999** 3D capillary network dataset (“brain99”):
+
+  * Data page: [https://sites.arizona.edu/secomb/3d-network-data-brain-1999/](https://sites.arizona.edu/secomb/3d-network-data-brain-1999/)
+
+  Please follow the usage terms provided on the data page and cite appropriately (see **Citations** below). If you use another network, adjust `parameters.ini` and any network loading paths accordingly.
+
+---
+
 ## Data handoff
 
 * **Macrocirculation → Microcirculation**: `pica_flow_heart_period.csv` (written by Python postprocess) is copied by `master.m` into
@@ -164,7 +179,8 @@ This program:
 1. Ensure compilers are GCC=9 toolchain; install MATLAB and Python.
 2. Run `master.m` from the repo root.
 3. Adjust simulation times and mesh inside `master.m` and the DUNE `parameters.ini` to match the scenarios in the preprint.
-4. Results (pressures, concentrations, radii) are written into module-specific output folders and CSV files.
+4. If using the **brain99** network, make sure the corresponding network/parameter configuration is selected in the microcirculation module.
+5. Results (pressures, concentrations, radii) are written into module-specific output folders and CSV files.
 
 ---
 
@@ -179,7 +195,12 @@ If you use this code, please cite:
 
   * Köppl, Vidotto, Wohlmuth (2020). *Int. J. Numer. Meth. Biomed. Eng.*, 36(10):e3386.
   * Fritz, *et al.* (2022). *IJNMBE*, 38(7):e3612. Source: [https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0](https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0)
-  * Dormanns, *et al.* (2015). *J. Theor. Biol.* 364:49–70. Repo: [https://github.com/brainstrust/envy-you](https://github.com/brainstrust/envy-you) 
+  * Dormanns, *et al.* (2015). *J. Theor. Biol.* 364:49–70. Repo: [https://github.com/brainstrust/envy-you](https://github.com/brainstrust/envy-you)
+
+* **Reference microvascular network (brain99)**
+  Secomb Lab, “3D Network Data – Brain 1999 (brain99).”
+  Data and description: [https://sites.arizona.edu/secomb/3d-network-data-brain-1999/](https://sites.arizona.edu/secomb/3d-network-data-brain-1999/)
+  *(Please cite the dataset/webpage and any linked publications per the site’s guidance.)*
 
 ---
 
@@ -189,13 +210,14 @@ This project is released under **GNU General Public License v3.0** (GPL-3.0).
 See [`LICENSE`](LICENSE).
 
 * If you embed code in other projects, ensure your usage is compatible with GPL-3.0.
-* Third-party components (DUNE modules, upstream repositories) carry their own licenses. We include notices and links; see `THIRD_PARTY_LICENSES.md`.
+* Third-party components (DUNE modules, upstream repositories) carry their own licenses.
+  See `THIRD_PARTY_LICENSES.md`.
 
 ---
 
 ## Acknowledgments
 
-This repository builds on excellent open-source efforts by the DUNE community and the authors of the cited works. We are grateful for their contributions.
+This repository builds on excellent open-source efforts by the DUNE community and the authors of the cited works and datasets. We are grateful for their contributions and for the availability of the **brain99** network data.
 
 ---
 
@@ -217,3 +239,4 @@ Issues and pull requests are welcome. Please include:
 * logs from `master.m` and the module that failed.
 
 Happy modeling!
+
