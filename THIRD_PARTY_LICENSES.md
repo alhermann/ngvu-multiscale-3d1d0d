@@ -65,7 +65,6 @@ Several DUNE modules add a special exception to GPL-2.0 to address template/head
 ## Practical notes
 
 * **We mirror license texts** for DUNE modules at the repo root as `LICENSE_*.md` for convenience; the originals are also present within the corresponding subfolders.
-* For **pybind11** and **GMM++**, please keep their original `LICENSE`/`COPYING*` files in `Macrocirculation/external/...` directories.
 * If you **add or update** third-party code, append a section here and include its license file.
 
 ---
