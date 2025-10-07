@@ -1,5 +1,5 @@
 %% Master script — Macrocirculation build/run/post → Micro build → CSV handoff → Launch Micro & NGVU
-% Run from repo root. No placeholders.
+% Run from repo root. 
 
 %% -------- CONFIG --------
 % Macrocirculation (build & run)
