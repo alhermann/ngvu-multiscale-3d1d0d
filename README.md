@@ -66,7 +66,7 @@ This repository couples (i) a 1D macrocirculation solver, (ii) a DUNE-based 3D/1
 1. **Clone**
 
 ```bash
-git clone https://github.com/<your-user>/ngvu-multiscale-3d1d0d.git
+git clone https://github.com/alhermann/ngvu-multiscale-3d1d0d.git
 cd ngvu-multiscale-3d1d0d
 ```
 
@@ -209,7 +209,6 @@ If you use this code, please cite:
 This project is released under **GNU General Public License v3.0** (GPL-3.0).
 See [`LICENSE`](LICENSE).
 
-* If you embed code in other projects, ensure your usage is compatible with GPL-3.0.
 * Third-party components (DUNE modules, upstream repositories) carry their own licenses.
   See `THIRD_PARTY_LICENSES.md`.
 
