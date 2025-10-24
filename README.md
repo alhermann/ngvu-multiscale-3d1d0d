@@ -196,6 +196,7 @@ If you use this code, please cite:
   * Köppl, Vidotto, Wohlmuth (2020). *Int. J. Numer. Meth. Biomed. Eng.*, 36(10):e3386.
   * Fritz, *et al.* (2022). *IJNMBE*, 38(7):e3612. Source: [https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0](https://github.com/CancerModeling/Flows1D0D3D/releases/tag/v1.0)
   * Dormanns, *et al.* (2015). *J. Theor. Biol.* 364:49–70. Repo: [https://github.com/brainstrust/envy-you](https://github.com/brainstrust/envy-you)
+  * ModelDB Repository (entry 232956). Source: https://github.com/ModelDBRepository/232956
 
 * **Reference microvascular network (brain99)**
   Secomb Lab, “3D Network Data – Brain 1999 (brain99).”
@@ -236,6 +237,4 @@ Issues and pull requests are welcome. Please include:
 * OS and compiler versions,
 * minimal reproduction steps,
 * logs from `master.m` and the module that failed.
-
-Happy modeling!
 
