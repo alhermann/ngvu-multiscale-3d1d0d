@@ -6,6 +6,19 @@
 
 This repository couples (i) a 1D macrocirculation solver, (ii) a DUNE-based 3D/1D microcirculation and transport module, and (iii) a MATLAB neuro-glial-vascular unit (NGVU) model. It builds the flow inputs, launches the micro model, and time-marches the NGVU while exchanging vessel radii via CSV.
 
+<table>
+  <tr>
+    <td width="50%">
+      <video src="assets/pressure.mp4" controls muted playsinline loop width="100%"></video>
+      <div align="center"><em>Pressure</em></div>
+    </td>
+    <td width="50%">
+      <video src="assets/pO2.mp4" controls muted playsinline loop width="100%"></video>
+      <div align="center"><em>pO₂</em></div>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Table of contents
