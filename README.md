@@ -8,13 +8,13 @@ This repository couples (i) a 1D macrocirculation solver, (ii) a DUNE-based 3D/1
 
 <table>
   <tr>
-    <td width="50%">
-      <video src="./pressure.mp4" controls muted playsinline loop width="100%"></video>
-      <div align="center"><em>Pressure</em></div>
+    <td width="50%" align="center">
+      <img src="pressure.gif" alt="Pressure animation" width="100%" />
+      <div><em>Pressure</em> — <a href="pressure.mp4">MP4</a></div>
     </td>
-    <td width="50%">
-      <video src="./pO2.mp4" controls muted playsinline loop width="100%"></video>
-      <div align="center"><em>pO₂</em></div>
+    <td width="50%" align="center">
+      <img src="pO2.gif" alt="pO₂ animation" width="100%" />
+      <div><em>pO₂</em> — <a href="pO2.mp4">MP4</a></div>
     </td>
   </tr>
 </table>
